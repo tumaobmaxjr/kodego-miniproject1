@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d5981de46f.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <!-- main navbar -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 shadow-sm sticky-sm-top">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" aria-current="page" href="index.html">
+                <img src="images/logo.png" alt="Image of logo" width="201px" height="39px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center mx-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle activePage" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="html-intro.html"><h6>HTML</h6><p style="font-size: 11px; opacity: 0.8;">Learn to use HTML to structure web content</p></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="css-intro.html"><h6>CSS</h6><p style="font-size: 11px; opacity: 0.8;">Learn how to use CSS to style content</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav text-center mx-2">
+                    <li class="nav-item dropdown text-center">
+                        <a class="nav-link dropdown-toggle text-black" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            References
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/tags/default.asp"><h6>HTML</h6><p style="font-size: 11px; opacity: 0.8;">Structure of content on the web</p></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/cssref/default.asp"><h6>CSS</h6><p style="font-size: 11px; opacity: 0.8;">Code used describing document document style</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 60%;">
+                    <form class="d-flex">
+                        <input class="form-control rounded-0 shadow-none" style="background-color: #e9ecef;" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn text-white rounded-0" style="background-color: #2B7A78;" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+            </div>
+            <div class="collapse navbar-collapse text-center my-2" id="navbarSupportedContent">
+                <img src="images/moon.png" id="icon" class="centerIMG mx-3">
+            </div>   
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="category">
+            <h4>CSS Tutorial</h4>
+            <a href="css-intro.html">CSS Introduction</a>
+            <a href="css-syntax.html">CSS Syntax</a>
+            <a href="css-selectors.html" class="active text-black">CSS Selectors</a>
+            <a href="css-insert.html">CSS Insert</a>
+            <a href="css-comments.html">CSS Comments</a>
+            <a href="css-colors.html">CSS Colors</a>
+        </div>
+    </div>
+      
+    <div class="content">
+        <div class="content-style">
+            <h1>CSS Selectors</h1>
+            <p>A CSS selector is used to choose which HTML elements to style.</p>
+            <hr>
+            <p>CSS selectors are used to "find" (or choose) the HTML elements to style.</p>
+            <p>CSS selectors are classified into five types:</p>
+            <ul>
+                <li>Selectors that are simple (select elements based on name, id, class)</li>
+                <li>Selectors for combinations (select elements based on a specific relationship between them)</li>
+                <li>Selectors for pseudo-classes (select elements based on a certain state)</li>
+                <li>Selectors for pseudo-elements (select and style a part of an element)</li>
+                <li>Selectors for attributes (select elements based on an attribute or attribute value)</li>
+            </ul>
+            <p>This page will go over the most fundamental CSS selectors.</p>
+            <hr>
+            <h2>CSS element Selector</h2>
+            <p>The element selector chooses HTML elements based on their names.</p>
+            <h5>Example</h5>
+            <p>All &lt;p> elements on the page will be center-aligned and have red text:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    <tagName>p</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>red</value>; <br>
+                    } <br>
+                </code>
+            </div>
+            <hr>
+            <h2>CSS id Selector</h2>
+            <p>The id selector uses an HTML element's id attribute to select a specific element.</p>
+            <p>Because an element's id is unique within a page, the id selector is used to select only one element!</p>
+            <p>To select an element with a specific id, use the hash (#) character followed by the element's id.</p>
+            <h5>Example</h5>
+            <p>The following CSS rule will be applied to the HTML element with id="par1":</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    <tagName>#par1</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>red</value>; <br>
+                    } <br>
+                </code>
+            </div>
+            <div class="note">
+                <strong>Note:</strong> An id name cannot begin with a number!
+            </div>
+            <hr>
+            <h2>CSS class Selector</h2>
+            <p>The class selector is used to select HTML elements that have a specific class attribute.</p>
+            <p>To select elements of a particular class, use a period (.) character followed by the class name.</p>
+            <h5>Example</h5>
+            <p>All HTML elements with class="center" will be red and center-aligned in this example:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    <tagName>.center</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>red</value>; <br>
+                    } <br>
+                </code>
+            </div>
+            <p>A class can also be configured to affect only specific HTML elements.</p>
+            <h5>Example</h5>
+            <p>Only in this case, elements with the class="center" will be highlighted in red and center-aligned:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    <tagName>p.center</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>red</value>; <br>
+                    } <br>
+                </code>
+            </div>
+            <p>HTML elements can also refer to multiple classes.</p>
+            <h5>Example</h5>
+            <p>In this case, the following elements will be styled with class="center" and class="large":</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;<tagName>p</tagName> <attribute>class</attribute><value>="center large"</value>>This paragraph refers to two classes.&lt;<tagName>/p</tagName>>
+                </code>
+            </div>
+            <div class="note">
+                <strong>Note:</strong> A class name cannot begin with a number!
+            </div>
+            <hr>
+            <h2>CSS Universal Selector</h2>
+            <p>All HTML elements on the page are selected by the universal selector (*).</p>
+            <h5>Example</h5>
+            <p>Every HTML element on the page will be affected by the CSS rule below:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    <code>
+                        <tagName>*</tagName> { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>blue</value>; <br>
+                        } <br>
+                    </code>
+                </code>
+            </div>
+            <hr>
+            <h2>CSS Grouping Selector</h2>
+            <p>All HTML elements with the same style definitions are selected by the grouping selector.</p>
+            <p>Examine the CSS code below (the h1, h2, and p elements all have the same style definitions):</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    <tagName>h1</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>red</value>; <br>
+                    } <br>
+                    <br>
+                    <tagName>h2</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>red</value>; <br>
+                    } <br>
+                    <br>
+                    <tagName>p</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>red</value>; <br>
+                    } <br>
+                </code>
+            </div>
+            <p>To reduce code, it is preferable to group the selectors.</p>
+            <p>To group selectors, use a comma to separate each one.</p>
+            <h5>Example</h5>
+            <p>In this example, we've grouped the selectors from the previous code:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    <tagName>h1, h2, p</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>red</value>; <br>
+                    } <br>
+                </code>
+            </div>
+            <hr>
+            <h2>Simple CSS Selectors</h2>
+            <table>
+                <tr>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Example description</th>
+                </tr>
+                <tr>
+                    <td><i>#id</i></td>
+                    <td>#firstName</td>
+                    <td>Selects the element with id="firstName"</td>
+                </tr>
+                <tr>
+                    <td><i>.class</i></td>
+                    <td>.intro</td>
+                    <td>Selects all elements with class="intro"</td>
+                </tr>
+                <tr>
+                    <td><i>element.class</i></td>
+                    <td>p.intro</td>
+                    <td>Selects only &lt;p> elements with class="intro"</td>
+                </tr>
+                <tr>
+                    <td><i>*</i></td>
+                    <td>*</td>
+                    <td>Selects all elements</td>
+                </tr>
+                <tr>
+                    <td><i>element</i></td>
+                    <td>p</td>
+                    <td>Selects all &lt;p> elements</td>
+                </tr>
+                <tr>
+                    <td><i>element,element,..</i></td>
+                    <td>div, p</td>
+                    <td>Selects all &lt;div> elements and all &lt;p> elements</td>
+                </tr>
+            </table>
+            <hr>
+            <a href="css-syntax.html" class="previous">&lt;</a>
+            <a href="css-insert.html" class="next">&gt;</a>
+        </div>
+        
+        <!-- footer start -->
+        <footer class="sticky-footer px-5 pt-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6 class="silverText">ABOUT</h6>
+                    <p>
+                        <a href="index.html" style="color: #2B7A78;">CodeStarter</a>
+                        is and will be a free resource for developers.
+                        It is a web development academy that teaches aspects of web development.
+                    </p><br>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="silverText">CATEGORIES</h6>
+                    <ul class="no-bullets">
+                        <li><a class="colorLI" href="html-intro.html">HTML</a></li>
+                        <li><a class="colorLI" href="css-intro.html">CSS</a></li>
+                    </ul><br>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="silverText">QUICK LINKS</h6>
+                    <ul class="no-bullets">
+                        <li><a class="colorLI hoverSilverText" href="about.html">About Us</a></li>
+                        <li><a class="colorLI" href="contact.html">Contact Us</a></li>
+                        <li><a class="colorLI" href="#">Privacy Policy</a></li>
+                        <li><a class="colorLI" href="#">Terms of Service</a></li>
+                    </ul><br>
+                </div>
+            </div>
+            <div class="row border-top border-gray border-1 pt-3">
+                <div class="col-sm-6">
+                    <p>© 1999-2022 by Refsnes Data. All Rights Reserved.</p>
+                </div>
+                <div class="col-sm-6 text-end">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-github fa-xl"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- scripts -->
+    <!-- dark mode -->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "/images/sun.png";
+            }else{
+                icon.src = "/images/moon.png";
+            }
+        }
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

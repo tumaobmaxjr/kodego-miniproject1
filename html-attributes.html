@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Attributes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d5981de46f.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <!-- main navbar -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 shadow-sm sticky-sm-top">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" aria-current="page" href="index.html">
+                <img src="images/logo.png" alt="Image of logo" width="201px" height="39px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center mx-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle activePage" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="html-intro.html"><h6>HTML</h6><p style="font-size: 11px; opacity: 0.8;">Learn to use HTML to structure web content</p></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="css-intro.html"><h6>CSS</h6><p style="font-size: 11px; opacity: 0.8;">Learn how to use CSS to style content</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav text-center mx-2">
+                    <li class="nav-item dropdown text-center">
+                        <a class="nav-link dropdown-toggle text-black" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            References
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/tags/default.asp"><h6>HTML</h6><p style="font-size: 11px; opacity: 0.8;">Structure of content on the web</p></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/cssref/default.asp"><h6>CSS</h6><p style="font-size: 11px; opacity: 0.8;">Code used describing document document style</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 60%;">
+                    <form class="d-flex">
+                        <input class="form-control rounded-0 shadow-none" style="background-color: #e9ecef;" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn text-white rounded-0" style="background-color: #2B7A78;" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+            </div>
+            <div class="collapse navbar-collapse text-center my-2" id="navbarSupportedContent">
+                <img src="images/moon.png" id="icon" class="centerIMG mx-3">
+            </div>   
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="category">
+            <h4>HTML Tutorial</h4>
+            <a href="html-intro.html">HTML Introduction</a>
+            <a href="html-editors.html">HTML Editors</a>
+            <a href="html-basic.html">HTML Basic</a>
+            <a href="html-elements.html">HTML Elements</a>
+            <a href="html-attributes.html" class="active text-black">HTML Attributes</a>
+        </div>
+    </div>
+      
+    <div class="content">
+        <div class="content-style">
+            <h1>HTML Attributes</h1>
+            <p>HTML attributes offer further details about HTML elements.</p>
+            <hr>
+            <h2>HTML Attributes</h2>
+            <ul>
+                <li>Every element in HTML can have <strong>attributes</strong>.</li>
+                <li> <strong>Additional information</strong> about elements is provided by attributes.</li>
+                <li>Always specify attributes in <strong>the start tag</strong>.</li>
+                <li>Typically, attributes are expressed as <strong>name</strong>=<strong>"value"</strong>.</li>
+            </ul>
+            <hr>
+            <h2>The href Attribute</h2>
+            <p>A hyperlink is defined using the <mark>&lta></mark> tag. The URL of the page to which the link points is specified by the <mark>href</mark> attribute:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;<tagName>a</tagName> <attribute>href</attribute><value>="https://www.codestarter.com"</value>>CodeStarter&lt;<tagName>/a</tagName>><br>
+                </code>
+            </div>
+            <hr>
+            <h2>The src Attribute</h2>
+            <p>To embed an image in an HTML page, use the <mark>&ltimg></mark> tag. The <mark>src</mark> attribute specifies the path to the displayed image:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;<tagName>img</tagName> <attribute>src</attribute><value>="sample_img.jpg"</value>><br>
+                </code>
+            </div>
+            <p>The URL can be specified in the <mark>src</mark> property in one of two ways:</p>
+            <p>1. <strong>Absolute URL</strong> - links to an image hosted on another domain that is external.</p>  
+            <p>Example: src="https://www.codestarter.com/images/sample_img.jpg".</p>
+            <div class="note">
+                <strong>Note:</strong> Copyright may apply to external photos. You might be breaking copyright laws if you use it without authorization. 
+                Additionally, you have no control over external photos; they could be changed or withdrawn at any time.
+            </div>
+            <br>
+            <p> 
+                2. <strong>Relative URL</strong> - references to an image hosted on the internet. Here, the domain name is absent from the URL. 
+                The URL will be relative to the current page if it starts out without a slash.
+            </p>
+            <p>Example: src="sample_img.jpg"</p>
+            <p>The URL will be relative to the domain if it starts with a slash.</p>
+            <p>Example: src="/images/sample_img.jpg".</p>
+            <div class="note">
+                <strong>Tip:</strong> Relative URLs are usually always the best choice. If you switch domains, they won't stop working.
+            </div>
+            <hr>
+            <h2>The width and height Attributes</h2>
+            <p>The width and height attributes, which specify the <mark>width</mark> and <mark>height</mark> of the image (in pixels), should also be included in the <mark>&ltimg></mark> tag:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;<tagName>img</tagName> <attribute>src</attribute><value>="sample_img.jpg"</value> 
+                    <attribute>width</attribute><value>="250"</value> <attribute>height</attribute><value>="500"</value>>
+                </code>
+            </div>
+            <hr>
+            <h2>The alt Attribute</h2>
+            <p>
+                The required <mark>alt</mark> attribute for the <mark>&ltimg></mark> tag specifies alternate 
+                text for an image if it cannot be displayed for some reason. This could be because of a slow connection, 
+                an error in the <mark>src</mark> attribute, or the user using a screen reader.
+            </p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;<tagName>img</tagName> <attribute>src</attribute><value>="sample_img.jpg"</value>
+                    <attribute>alt</attribute><value>="Sample Image"</value>>
+                </code>
+            </div>
+            <hr>
+            <h2>The style Attribute</h2>
+            <p>Color, font, size, and other styles can be added to an element using the <mark>style</mark> attribute.</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;<tagName>p</tagName> <attribute>style</attribute><value>="color: red;"</value>>
+                    This is a red paragraph.&lt;<tagName>/p</tagName>>
+                </code>
+            </div>
+            <hr>
+            <h2>The lang Attribute</h2>
+            <p>
+                To declare the language of the Web page, always include the <mark>lang</mark> attribute inside the <mark>&lthtml></mark> tag. 
+                This is intended to help search engines and browsers.
+            </p>
+            <p>The language in the following example is English:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;!<tagName>DOCTYPE</tagName> <attribute>html</attribute>&gt; <br>
+                    &lt;<tagName>html</tagName> <attribute>lang</attribute><value>="en"</value>> <br>
+                    &lt;<tagName>body</tagName>> <br>
+                    ... <br>
+                    &lt;<tagName>/body</tagName>&gt; <br>
+                    &lt;<tagName>/html</tagName>&gt; <br>
+                </code>
+            </div>
+            <p>
+                In the <mark>lang</mark> attribute, country codes can be added to the language code. 
+                As a result, the first two characters of the HTML page define the language, 
+                and the last two characters define the country.
+            </p>
+            <p>The example below uses English as the language and the United States as the country:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;!<tagName>DOCTYPE</tagName> <attribute>html</attribute>&gt; <br>
+                    &lt;<tagName>html</tagName> <attribute>lang</attribute><value>="en-US"</value>> <br>
+                    &lt;<tagName>body</tagName>> <br>
+                    ... <br>
+                    &lt;<tagName>/body</tagName>&gt; <br>
+                    &lt;<tagName>/html</tagName>&gt; <br>
+                </code>
+            </div>
+            <hr>
+            <h2>The title Attribute</h2>
+            <p>The title attribute provides additional information about an element.</p>
+            <p>When you hover your mouse over the element, the value of the title attribute will be displayed as a tooltip:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;<tagName>p</tagName> <attribute>title</attribute><value>="I'm a tooltip"</value>>
+                    This is a paragraph.&lt;<tagName>/p</tagName>>
+                </code>
+            </div>
+            <hr>
+            <h3>We recommend that you always use lowercase attributes.</h3>
+            <p>Lowercase attribute names are not required by the HTML standard.</p>
+            <p>The title attribute (as well as all other attributes) can be written in uppercase or lowercase, such as <strong>title</strong> or <strong>TITLE</strong>.</p>
+            <hr>
+            <h3>We recommend that you always quote attribute values.</h3>
+            <p>Quotes around attribute values are not required by the HTML standard.</p>
+            <h5>Good:</h5>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;<tagName>a</tagName> <attribute>href</attribute><value>="https://www.codestarter.com"</value>>CodeStarter&lt;<tagName>/a</tagName>><br>
+                </code>
+            </div>
+            <h5>Bad:</h5>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;<tagName>a</tagName> <attribute>href</attribute><value>=https://www.codestarter.com</value>>CodeStarter&lt;<tagName>/a</tagName>><br>
+                </code>
+            </div>
+            <hr>
+            <h2>Chapter Summary</h2>
+            <ul>
+                <li>Attributes can be applied to any HTML element.</li>
+                <li>The <mark>hrf</mark> attribute of <mark>&lta></mark> specifies the URL of the page to which the link leads.</li>
+                <li>The path to the image to be displayed is specified by the <mark>src</mark> attribute of <mark>&ltimg></mark>.</li>
+                <li>The <mark>width</mark> and <mark>height</mark> attributes of <mark>&ltimg></mark> provide image size information.</li>
+                <li>The <mark>alt</mark> attribute of <mark>&ltimg></mark> specifies an image's alternate text.</li>
+                <li>The <mark>style</mark> attribute is used to apply styles to an element, such as color, font, size, and other options.</li>
+                <li>The <mark>&lthtml></mark> tag's <mark>lang</mark> attribute specifies the language of the Web page.</li>
+                <li>The <mark>title</mark> attribute provides additional information about an element.</li>
+            </ul>
+            <hr>
+            <h2>HTML Attribute Reference</h2>
+            <div class="note">
+                <a href="https://www.w3schools.com/tags/default.asp" style="color: black;"><u>HTML Attribute Reference</u></a> 
+                contains a complete list of all attributes for each HTML element.
+            </div>
+            <hr>
+            <a href="html-elements.html" class="previous">&lt;</a>
+            <a href="https://www.w3schools.com/tags/default.asp" class="next">HTML Reference ></a>
+        </div>
+        
+        <!-- footer start -->
+        <footer class="sticky-footer px-5 pt-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6 class="silverText">ABOUT</h6>
+                    <p>
+                        <a href="index.html" style="color: #2B7A78;">CodeStarter</a>
+                        is and will be a free resource for developers.
+                        It is a web development academy that teaches aspects of web development.
+                    </p><br>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="silverText">CATEGORIES</h6>
+                    <ul class="no-bullets">
+                        <li><a class="colorLI" href="html-intro.html">HTML</a></li>
+                        <li><a class="colorLI" href="css-intro.html">CSS</a></li>
+                    </ul><br>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="silverText">QUICK LINKS</h6>
+                    <ul class="no-bullets">
+                        <li><a class="colorLI hoverSilverText" href="about.html">About Us</a></li>
+                        <li><a class="colorLI" href="contact.html">Contact Us</a></li>
+                        <li><a class="colorLI" href="#">Privacy Policy</a></li>
+                        <li><a class="colorLI" href="#">Terms of Service</a></li>
+                    </ul><br>
+                </div>
+            </div>
+            <div class="row border-top border-gray border-1 pt-3">
+                <div class="col-sm-6">
+                    <p>© 1999-2022 by Refsnes Data. All Rights Reserved.</p>
+                </div>
+                <div class="col-sm-6 text-end">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-github fa-xl"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- scripts -->
+    <!-- dark mode -->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "/images/sun.png";
+            }else{
+                icon.src = "/images/moon.png";
+            }
+        }
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

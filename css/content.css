@@ -1,0 +1,122 @@
+body {
+    height: 100%;
+    background-color: white;
+    color: black;
+}
+
+h1, h3, h5 {
+    font-weight: normal !important;
+}
+
+h2 {
+    font-weight: normal !important;
+    margin-bottom: 20px !important;
+}
+
+.content-style {
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+.center-content {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.fa-solid {
+    color: #2B7A78;
+    font-size: 100px;
+}
+
+.previous {
+    background-color: #2B7A78;
+    color: white !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    float: left;
+}
+
+.next {
+    background-color: #2B7A78;
+    color: white !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+}
+
+.previous:hover {
+    background-color: #43B1AE;
+}
+
+.next:hover {
+    background-color: #43B1AE;
+}
+
+.disable{
+	pointer-events:none !important;
+}
+
+.exampleCode {
+    padding: 10px !important;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid lightgray !important;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.note {
+    background-color: #F8DE7E;
+    padding: 20px;
+    color: black;
+}
+
+mark {
+    background-color: #F2F3F4 !important;
+    color: red;
+}
+
+code {
+    color: black !important;
+}
+
+tagName {
+    color: brown;
+}
+
+attribute {
+    color: red;
+}
+
+value {
+    color: mediumblue;
+}
+
+comment {
+    color: green
+}

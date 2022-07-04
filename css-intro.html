@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Intro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d5981de46f.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <!-- main navbar -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 shadow-sm sticky-sm-top">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" aria-current="page" href="index.html">
+                <img src="images/logo.png" alt="Image of logo" width="201px" height="39px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center mx-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle activePage" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="html-intro.html"><h6>HTML</h6><p style="font-size: 11px; opacity: 0.8;">Learn to use HTML to structure web content</p></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="css-intro.html"><h6>CSS</h6><p style="font-size: 11px; opacity: 0.8;">Learn how to use CSS to style content</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav text-center mx-2">
+                    <li class="nav-item dropdown text-center">
+                        <a class="nav-link dropdown-toggle text-black" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            References
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/tags/default.asp"><h6>HTML</h6><p style="font-size: 11px; opacity: 0.8;">Structure of content on the web</p></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/cssref/default.asp"><h6>CSS</h6><p style="font-size: 11px; opacity: 0.8;">Code used describing document document style</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 60%;">
+                    <form class="d-flex">
+                        <input class="form-control rounded-0 shadow-none" style="background-color: #e9ecef;" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn text-white rounded-0" style="background-color: #2B7A78;" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+            </div>
+            <div class="collapse navbar-collapse text-center my-2" id="navbarSupportedContent">
+                <img src="images/moon.png" id="icon" class="centerIMG mx-3">
+            </div>   
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="category">
+            <h4>CSS Tutorial</h4>
+            <a href="css-intro.html" class="active text-black">CSS Introduction</a>
+            <a href="css-syntax.html">CSS Syntax</a>
+            <a href="css-selectors.html">CSS Selectors</a>
+            <a href="css-insert.html">CSS Insert</a>
+            <a href="css-comments.html">CSS Comments</a>
+            <a href="css-colors.html">CSS Colors</a>
+        </div>
+    </div>
+      
+    <div class="content">
+        <div class="content-style">
+            <h1>CSS Introduction</h1>
+            <hr>
+            <h2>What is CSS?</h2>
+            <ul>
+                <li>CSS stands for Cascading Style Sheets.</li>
+                <li>CSS specifies how HTML elements should appear on screen, paper, or in other media.</li>
+                <li>CSS saves a significant amount of time. It has the ability to control the layout of multiple web pages at the same time.</li>
+                <li>CSS files contain external stylesheets.</li>
+            </ul>
+            <hr>
+            <h2>Why Should You Use CSS?</h2>
+            <p>CSS is used to define styles for your web pages, such as design, layout, and display variations for different devices and screen sizes.</p>
+            <h5>Example</h5>
+            <div class="exampleCode border mb-3">
+                <code>
+                    <tagName>body</tagName> { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<attribute>background-color</attribute>: <value>lightblue</value>; <br>
+                    } <br>
+                    <br>
+                    <tagName>h1</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>color</attribute>: <value>white</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>text-align</attribute>: <value>center</value>; <br>
+                    } <br>
+                    <br>
+                    <tagName>p</tagName> { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>font-family</attribute>: <value>verdana</value>; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<attribute>font-size</attribute>: <value>20px</value>; <br>
+                    } <br>
+                </code>
+            </div>
+            <hr>
+            <h2>CSS Solved a Major Problem</h2>
+            <p>HTML was NEVER intended to include tags for web page formatting!</p>
+            <p>HTML was developed to describe the content of a web page, for example:</p>
+            <p>&lt;h1>This is a heading&lt;/h1></p>
+            <p>&lt;p>This is a paragraph.&lt;/p></p>
+            <p>
+                When tags like font> and color attributes were added to the HTML 3.2 specification, 
+                web developers' nightmare began. The creation of large websites, where fonts and color 
+                information were added to every single page, became a time-consuming and costly process.
+            </p>
+            <p>CSS was created by the World Wide Web Consortium (W3C) to address this issue.</p>
+            <p>CSS removed the HTML page's style formatting!</p>
+            <div class="note">
+                If you are unfamiliar with HTML, we recommend that you read our 
+                <a href="html-intro.html" style="color: black;"><u>HTML Tutorial</u></a>.
+            </div>
+            <hr>
+            <h2>CSS Saves a lot of Time and Effort!</h2>
+            <p>Style definitions are typically saved in separate.css files.</p>
+            <p>You can change the look of an entire website by changing just one file with an external stylesheet file!</p>
+            <hr>
+            <a href="index.html" class="previous">&lt; Home</a>
+            <a href="css-syntax.html" class="next">&gt;</a>
+        </div>
+        
+        <!-- footer start -->
+        <footer class="sticky-footer px-5 pt-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6 class="silverText">ABOUT</h6>
+                    <p>
+                        <a href="index.html" style="color: #2B7A78;">CodeStarter</a>
+                        is and will be a free resource for developers.
+                        It is a web development academy that teaches aspects of web development.
+                    </p><br>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="silverText">CATEGORIES</h6>
+                    <ul class="no-bullets">
+                        <li><a class="colorLI" href="html-intro.html">HTML</a></li>
+                        <li><a class="colorLI" href="css-intro.html">CSS</a></li>
+                    </ul><br>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="silverText">QUICK LINKS</h6>
+                    <ul class="no-bullets">
+                        <li><a class="colorLI hoverSilverText" href="about.html">About Us</a></li>
+                        <li><a class="colorLI" href="contact.html">Contact Us</a></li>
+                        <li><a class="colorLI" href="#">Privacy Policy</a></li>
+                        <li><a class="colorLI" href="#">Terms of Service</a></li>
+                    </ul><br>
+                </div>
+            </div>
+            <div class="row border-top border-gray border-1 pt-3">
+                <div class="col-sm-6">
+                    <p>© 1999-2022 by Refsnes Data. All Rights Reserved.</p>
+                </div>
+                <div class="col-sm-6 text-end">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-github fa-xl"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- scripts -->
+    <!-- dark mode -->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "/images/sun.png";
+            }else{
+                icon.src = "/images/moon.png";
+            }
+        }
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

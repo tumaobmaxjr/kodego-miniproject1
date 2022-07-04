@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Editors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d5981de46f.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <!-- main navbar -->
+    <nav class="navbar navbar-expand-lg px-3 py-2 shadow-sm sticky-sm-top">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" aria-current="page" href="index.html">
+                <img src="images/logo.png" alt="Image of logo" width="201px" height="39px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center mx-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle activePage" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="html-intro.html"><h6>HTML</h6><p style="font-size: 11px; opacity: 0.8;">Learn to use HTML to structure web content</p></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="css-intro.html"><h6>CSS</h6><p style="font-size: 11px; opacity: 0.8;">Learn how to use CSS to style content</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav text-center mx-2">
+                    <li class="nav-item dropdown text-center">
+                        <a class="nav-link dropdown-toggle text-black" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            References
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/tags/default.asp"><h6>HTML</h6><p style="font-size: 11px; opacity: 0.8;">Structure of content on the web</p></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/cssref/default.asp"><h6>CSS</h6><p style="font-size: 11px; opacity: 0.8;">Code used describing document document style</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 60%;">
+                    <form class="d-flex">
+                        <input class="form-control rounded-0 shadow-none" style="background-color: #e9ecef;" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn text-white rounded-0" style="background-color: #2B7A78;" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+            </div>
+            <div class="collapse navbar-collapse text-center my-2" id="navbarSupportedContent">
+                <img src="images/moon.png" id="icon" class="centerIMG mx-3">
+            </div>   
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="category">
+            <h4>HTML Tutorial</h4>
+            <a href="html-intro.html">HTML Introduction</a>
+            <a href="html-editors.html" class="active text-black">HTML Editors</a>
+            <a href="html-basic.html">HTML Basic</a>
+            <a href="html-elements.html">HTML Elements</a>
+            <a href="html-attributes.html">HTML Attributes</a>
+        </div>
+    </div>
+      
+    <div class="content">
+        <div class="content-style">
+            <h1>HTML Editors</h1>
+            <p>To learn HTML, all you need is a simple text editor.</p>
+            <hr>
+            <h2>Learn HTML using Notepad or TextEdit</h2>
+            <p>Professional HTML editors can be used to create and modify web pages.</p>
+            <p>However, for learning HTML, we recommend using a simple text editor such as Notepad (Windows) or TextEdit (Mac).</p>
+            <p>We believe that learning HTML is best done with a simple text editor.</p>
+            <p>To make your first web page with Notepad or TextEdit, follow the steps below.</p>
+            <hr>
+            <h2>Step 1: Open Notepad (PC)</h2>
+            <p><strong>Windows 8 or later:</strong></p>
+            <p>Open the <strong>Start Screen</strong> (the window symbol at the bottom left on your screen). Type <strong>Notepad</strong>.</p>
+            <p><strong>Windows 7 or later:</strong></p>
+            <p>Open <strong>Start > Programs > Accessories > Notepad</strong></p>
+            <hr>
+            <h2>Step 1: Open TextEdit (Mac)</h2>
+            <p>Open <strong>FInder > Applications > TextEdit</strong></p>
+            <p>Open the <strong>Start Screen</strong> (the window symbol at the bottom left on your screen). Type <strong>Notepad</strong>.</p>
+            <p>Also change some preferences to get the application to save files correctly. In <strong>Preferences > Format ></strong>choose <strong>"Plain Text"</strong></p>
+            <p>Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".</p>
+            <p><strong>Then open a new document to place the code.</strong></p>
+            <hr>
+            <h2>Step 2: Make some HTML</h2>
+            <p>The following HTML code should be typed or copied into Notepad:</p>
+            <div class="exampleCode border mb-3">
+                <code>
+                    &lt;!<tagName>DOCTYPE</tagName> <attribute>html</attribute>&gt; <br>
+                    &lt;<tagName>html</tagName>&gt; <br>
+                    &lt;<tagName>body</tagName>&gt; <br>
+                    <br>
+                    &lt;<tagName>h1</tagName>&gt;My first heading&lt;<tagName>/h1</tagName>&gt; <br>
+                    <br>
+                    &lt;<tagName>p</tagName>&gt;My first paragraph.&lt;<tagName>/p</tagName>&gt; <br>
+                    <br>
+                    &lt;<tagName>/body</tagName>&gt; <br>
+                    &lt;<tagName>/html</tagName>&gt; <br>
+                </code>
+            </div>
+            <img src="images/HTML/img-notepad.png" width="75%">
+            <hr>
+            <h2>Step 3: Save the HTML Page</h2>
+            <p>You should save the file to your computer. In the Notepad menu, go to <strong>File > Save as</strong>.</p>
+            <p>Set the encoding to <strong>UTF-8</strong> and name the file <strong>"index.htm"</strong> (which is the preferred encoding for HTML files).</p>
+            <img src="images/HTML/img-save-htmlpage.png" width="75%">
+            <br><br>
+            <div class="note">
+                <strong>Tip:</strong> You can use either the.htm or.html file extensions. There is no difference; it is entirely up to you.
+            </div>
+            <hr>
+            <h3>Step 4: View the HTML Page in Your Browser</h3>
+            <p>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</p>
+            <p>The result will look much like this:</p>
+            <img src="images/HTML/display-simple-html.png" width="75%">
+            <hr>
+            <a href="html-intro.html" class="previous">&lt;</a>
+            <a href="html-basic.html" class="next">&gt;</a>
+        </div>
+        
+        <!-- footer start -->
+        <footer class="sticky-footer px-5 pt-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6 class="silverText">ABOUT</h6>
+                    <p>
+                        <a href="index.html" style="color: #2B7A78;">CodeStarter</a>
+                        is and will be a free resource for developers.
+                        It is a web development academy that teaches aspects of web development.
+                    </p><br>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="silverText">CATEGORIES</h6>
+                    <ul class="no-bullets">
+                        <li><a class="colorLI" href="/Tutorials/HTML/html-intro.html">HTML</a></li>
+                        <li><a class="colorLI" href="/Tutorials/CSS/css-intro.html">CSS</a></li>
+                    </ul><br>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="silverText">QUICK LINKS</h6>
+                    <ul class="no-bullets">
+                        <li><a class="colorLI hoverSilverText" href="about.html">About Us</a></li>
+                        <li><a class="colorLI" href="contact.html">Contact Us</a></li>
+                        <li><a class="colorLI" href="#">Privacy Policy</a></li>
+                        <li><a class="colorLI" href="#">Terms of Service</a></li>
+                    </ul><br>
+                </div>
+            </div>
+            <div class="row border-top border-gray border-1 pt-3">
+                <div class="col-sm-6">
+                    <p>© 1999-2022 by Refsnes Data. All Rights Reserved.</p>
+                </div>
+                <div class="col-sm-6 text-end">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a style="padding-left: 10px" href="#"><i class="fa-brands fa-github fa-xl"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- scripts -->
+    <!-- dark mode -->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "/images/sun.png";
+            }else{
+                icon.src = "/images/moon.png";
+            }
+        }
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.sticky-footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.fa-brands {
+    color: #2B7A78;
+}
+
+a:link {
+    text-decoration: none;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #393939 !important;
+    color: gray !important;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+h6.silverText {
+    color: silver;
+}
+
+a.colorLI {
+    color: gray !important;
+}
